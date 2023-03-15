@@ -722,11 +722,11 @@ body{
 .custom-surf-grid{
     display: grid;
     grid-template-columns: 1fr 30vw;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 2.5fr;
     grid-template-areas:
     "A B"
     "C B" ;
-    height: 87vh;
+    height: 88.1vh;
 }
 
 
@@ -738,20 +738,40 @@ body{
 .custom-surf-container-2{
     grid-area: B;
     padding-right: 60px;
+    height: inherit;
     background-color: rgba(75, 157, 171, 0.35);
     position: relative;
 }
 
 .custom-surf-container-2 img{
-    height: 87vh;
+    height: 88vh;
     transform: translate(-50%);
     transition: 0.5s;
 }
 
 .custom-surf-container-3{
     grid-area: C;
-    padding: 10px 180px 10px 60px;
+    padding: 10px 120px 60px 60px;
     background-color: rgba(0, 0, 0, 0.08);
+}
+
+.custom-surf-container-3 .param{
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.20);
+}
+
+.custom-surf-container-3 div div label{
+    font-size: .8rem;
+    padding: 0px 10px;
+}
+
+.custom-surf-container-3 div div input{
+    width: 70%;
+}
+
+.custom-surf-container-3 div label{
+    margin: 0px;
 }
 
 .surfboard-button{
