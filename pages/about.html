@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lessons</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav">
+            <i class="fa-solid fa-bars"></i>
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="./shop.html">SHOP</a></li>
+                <li><a href="./riders.html">RIDERS</a></li>
+                <li><a class="active" href="./about.html">LESSONS</a></li>
+                <li><a href="./contact.html">CONTACT</a></li>
+            </ul>
+            <div>
+                <input type="search" name="Search" placeholder="Search">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-lessons">
+            <div class="lessons-info">
+                <h2>Private lessons</h2>
+                <h4>What to expect from SurfShack private lessons?</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reprehenderit incidunt laudantium illo, illum recusandae aut quisquam dolor, autem hic ullam sed minima veniam a.</p>
+            </div>
+            <div class="lessons-info-div-img">
+                <img src="../multimedia/square_surf_lessons.jpeg" alt="">
+            </div>
+        </section>
+
+        <aside class="lessons-conainter">
+            <form action="" class="lessons-contact">
+                <fieldset class="contact-information-class">
+                    <legend>Contact information</legend>
+                    <div class="form-floating">
+                        <input type="text" name="lastName" id="fname-contact" class="form-control" placeholder="First name" required>
+                        <label for="fname-contact">First name:</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="text" name="firstName" id="lname-contact" class="form-control" placeholder="Last name" required>
+                        <label for="lname-contact">Last name:</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="email" name="email" id="email-contact" class="form-control" placeholder="E-mail" required>
+                        <label for="email-contact">E-mail:</label>
+                    </div>                    
+                </fieldset>
+                <fieldset class="about-level-class">
+                    <legend>Surfing level</legend>
+                    <label for="begginer-radio">Begginer</label>
+                    <input type="radio" id="begginer-radio" name="level" value="begginer" required>
+                    <label for="intermediate-radio">Intermediate</label>
+                    <input type="radio" id="intermediate-radio" name="level" value="intermediate" required>
+                    <label for="advanced-radio">Advanced</label>
+                    <input type="radio" id="advanced-radio" name="level" value="advanced" required>
+                    <label for="expert-radio">Expert</label>
+                    <input type="radio" id="expert-radio" name="level" value="expert" required>
+                </fieldset>
+                <fieldset class="info-extra-class">
+                    <legend>When would you like to take the lesson?</legend>
+                    <input type="date" name="date" id="class-date" value="2023-01-01" required>
+                    <label for="desc">Anything else you want to tell us before the lesson?</label>
+                    <textarea name="description" id="desc"></textarea>
+                </fieldset>
+                <div class="submit-reset">
+                    <input type="reset">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </aside>
+
+        <section class="review-container">
+            <h2>Read what our students say about us!</h2>
+            <div class="review-lessons">
+                <div class="review-title">
+                    <h4>Excelent!</h4>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <div class="review-info">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reprehenderit incidunt laudantium illo, illum recusandae aut quisquam dolor, autem hic ullam sed minima veniam a.</p>
+                </div>
+            </div>
+
+            <div class="review-lessons">
+                <div class="review-title">
+                    <h4>Excelent!</h4>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <div class="review-info">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reprehenderit incidunt laudantium illo, illum recusandae aut quisquam dolor, autem hic ullam sed minima veniam a.</p>
+                </div>
+            </div>
+
+            <div class="review-lessons">
+                <div class="review-title">
+                    <h4>Excelent!</h4>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <div class="review-info">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reprehenderit incidunt laudantium illo, illum recusandae aut quisquam dolor, autem hic ullam sed minima veniam a.</p>
+                </div>
+            </div>
+        </section>
+       
+    </main>
+    
+    <footer>
+        <ul>
+            <li>
+                <a href="https://www.instagram.com/agustinrabino/?hl=es" target="_blank">
+                    <img src="../multimedia/instagram_icon.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/channel/UC9stcXyrev9nxCBT3WLLkhw" target="_blank">
+                    <img src="../multimedia/youtube_icon.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="../multimedia/twitter_icon.png" alt="">
+                </a>
+            </li>
+            <li class="rights">all rights reserved</li>
+        </ul>
+        <img src="../multimedia/surfshack-footer-logo.png" alt="">
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
