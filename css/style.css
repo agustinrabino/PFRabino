@@ -50,7 +50,6 @@ body{
     min-width: 120px;
 }
 
-
 .nav ul{
     display: flex;
     margin: 0;
@@ -79,7 +78,7 @@ body{
     color: black;
 }
 
-@media (max-width:900px) {
+@media (max-width:920px) {
     .nav .fa-bars{
         display: flex
     }
@@ -99,7 +98,7 @@ body{
         align-content: start;
         justify-content: start;
         transition: 0.5s;
-        z-index: 1;
+        z-index: 3;
     }
 
     .nav .fa-solid:hover + ul {
@@ -109,11 +108,51 @@ body{
     .nav ul:hover{
         left:0px    
     }
-    
+ 
+    .nav div input{
+        margin: 0;
+        width: 30vw;
+    }
 }
 
+@media (max-width:490px) {
+    .nav {
+        padding: 10px;
+    }
+    footer {
+        padding: 5px 10px;
+    }
 
-/* END NAV */
+    footer .logo{
+        display: none;
+    }
+}
+
+footer{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    margin: 0px;
+    padding: 5px 50px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+footer ul{
+    display: flex;
+    padding: 0px;
+    margin: 0px
+}
+
+footer ul li{
+    list-style: none;
+    margin-right: 10px;
+}
+
+footer img{
+    height: 40px;
+}
+
 
 /* INDEX */
 
@@ -135,11 +174,12 @@ body{
 .hero-info {
     position: relative;
 }
+
 .hero-info h1{
     position: absolute;
     top: 1%;
     left: 50px;
-    font-size: 6.5vw;
+    font-size: clamp(4.5rem, 8vw, 6.5rem);
     color: rgb(20, 20, 20);
     letter-spacing: 20px;
     font-weight: 600;
@@ -152,11 +192,16 @@ body{
 
 }
 
+.medque490{
+    display: none;
+}
+
 .hero-info h4{
     position: absolute;
     top: 25%;
     left: 50px;
-    font-size: 2vw;
+    font-size:1.75rem;
+    line-height: 2rem;
     color: rgb(0, 0, 0);
     font-weight: 300;
 }
@@ -165,7 +210,7 @@ body{
     position: absolute;
     text-align: center;
     left: 50px;
-    bottom: 30%;
+    bottom: 27.5%;
     border: 2px solid;
     border-radius: 10px;
     padding: 0.75%  1.5%;
@@ -185,8 +230,9 @@ body{
     position: absolute;
     text-align: center;
     left: 50px;
-    bottom: 15%;
+    bottom: 12.5%;
     font-size: 2vw;
+    
     text-decoration: none;
     color: rgb(0, 0, 0);
 }
@@ -203,6 +249,83 @@ body{
 
 .hero-info .bcs span:hover + svg{
     transform: translate(10px, 0px);
+}
+
+@media (max-width:920px) {
+    .hero{
+        display: flex;
+        flex-direction: column;
+        height: 65vh;
+        position: relative;
+    }
+
+    .hero-banner{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100vw;
+        height: 65vh;
+        background-size: cover;
+        opacity: 0.8;
+    }
+
+    .hero-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: inherit;
+        height: inherit;
+        z-index: 1;
+    }
+
+    .hero-info h1{
+        position: unset;
+        text-align: center;
+        font-size: 3.5rem;
+    }
+
+    .hero-info h4{
+        position: unset;
+        font-size: 2rem;
+    }
+
+    .hero-info div a{
+        padding: 0px 20px;
+    }
+    
+    .hero-info .bos{
+        position: unset;
+        font-size: 1.3rem;
+    }
+
+    .hero-info .bcs{
+        position: unset;
+        font-size: 1.3rem;
+    }
+
+}
+
+@media (max-width:490px) {
+    .hero-info h1{
+        position: unset;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .medque490{
+        display: block;
+    }
+
+    .hero-info h4{
+        position: unset;
+        font-size: 1.85rem;
+    }
+
+    .hero-info div{
+        flex-direction: column;
+        gap: 25px;
+    }
 }
 
 .banner{
@@ -263,13 +386,59 @@ body{
     opacity: 1;
 }
 
+@media (max-width:920px) {
+    .banner{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .banner .items{
+        width: inherit;
+    }
+
+    .banner .items h2{
+        font-size: 3rem;
+    }
+
+    .banner .items a{
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width:490px) {
+    .banner{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .banner .items{
+        width: inherit;
+    }
+
+    .banner .items h2{
+        font-size: 3.5rem;
+        top: 20%;
+    }
+
+    .banner .items a{
+        font-size: 2.5rem;
+    }
+}
+
+
 .youtube{
+    width: 100vw;
+    height: 56.25vw;
     display: flex;
     justify-content: center;
     margin-bottom:25px;
 }
 
-/* END INDEX */
+.youtube iframe{
+    width: inherit;
+}
 
 /* ABOUT */
 
@@ -322,6 +491,31 @@ body{
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
     object-fit: cover;
+}
+
+@media (max-width:625px) {
+    .about-lessons{
+       flex-direction: column-reverse;
+       margin: 30px;
+       height: auto;
+    } 
+
+    .about-lessons .lessons-info-div-img{
+        width: 100%;
+        height: 35vh;
+    }
+
+    .about-lessons div img{
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .about-lessons .lessons-info{
+        width: 100%;
+        height: auto;
+
+    }
 }
 
 .lessons-contact {
@@ -426,6 +620,27 @@ body{
     cursor: pointer;
 }
 
+@media (max-width:625px) {
+
+    .lessons-contact {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .about-lessons{
+        margin-bottom: 20px;
+    }
+
+    .lessons-contact{
+        padding: 30px;
+    }
+
+    .lessons-contact .form-floating input{
+        width: 95%;
+    }
+}
+
 .review-container{
     display: flex;
     flex-direction: column;
@@ -440,7 +655,7 @@ body{
 
 .review-container h2{
     display: block;
-    padding: 20px 5px 5px 5px;
+    padding: 20px 25px 5px 25px;
     margin: 0px;
 }
 
@@ -468,10 +683,30 @@ body{
     margin-top: 2.5px;
 }
 
-/* END ABOUT */
+@media (max-width:625px) {
+    .review-container{
+        margin: 30px;
+        height: auto;
+    }
+
+    .review-mq{
+        width: 350px;
+        height: 300px;
+        overflow: auto;
+    }
+
+    .review-lessons{
+        flex-direction: column;
+    }
+
+    .review-lessons .review-title{
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
 
 /* RIDERS */
-
 .carousel-item{
     height: 35vh;
     object-fit: cover;
@@ -535,7 +770,7 @@ body{
 
 .container-riders .riders-cover p{
     text-align:start;
-    font-size: 2vw;
+    font-size: clamp(.78rem, 2vw, 1.75rem);;
     padding: 20px;   
     width: 30vw;
     margin:0px;
@@ -571,9 +806,6 @@ body{
     left: 0;
     transition: 1s;
 }
-
-
-/* END RIDERS */
 
 
 /* SHOP */
@@ -715,7 +947,7 @@ body{
     z-index: 1;
 }
 
-/* END SHOP */
+
 
 /*CUSTOM SURFBOARD */
 
@@ -805,30 +1037,8 @@ body{
     transform: translate(-46%);
 }
 
-/*END CUSTOM SURFBOARD */
 
-
-footer{
-    display: flex;
-    background-color: rgb(0, 0, 0);
-    margin: 0px;
-    padding: 5px 50px;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
+@media (max-width:490px) {
+     
 }
 
-footer ul{
-    display: flex;
-    padding: 0px;
-    margin: 0px
-}
-
-footer ul li{
-    list-style: none;
-    margin-right: 10px;
-}
-
-footer img{
-    height: 40px;
-}
