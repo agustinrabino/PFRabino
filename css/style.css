@@ -284,7 +284,7 @@ footer img{
     .hero-info h1{
         position: unset;
         text-align: center;
-        font-size: 3.5rem;
+        font-size: 3.15rem;
     }
 
     .hero-info h4{
@@ -371,7 +371,7 @@ footer img{
     transform:  translate(-50%, -50%);
     position: absolute;
     letter-spacing: 10px;
-    top: 12%;
+    top: 15%;
     left: 50%;
     transition: 0.5s;
 }
@@ -428,7 +428,6 @@ footer img{
         font-size: 2.5rem;
     }
 }
-
 
 .youtube{
     width: 100vw;
@@ -723,7 +722,7 @@ footer img{
     display: flex;
     position: relative;
     overflow: hidden;
-    height: clamp(375px, 40vh, 850px);
+    height: clamp(420px, 40vh, 950px);
     gap: 1px;
     z-index: 0;
 }
@@ -1037,7 +1036,7 @@ h2{
 }
 
 
-@media (max-width:768px) {
+@media (max-width:1010px) {
     .maps-main{
         flex-direction: column;
         align-items: center;
@@ -1064,7 +1063,7 @@ h2{
     }
 }
 
-@media (max-width:480px) {
+@media (max-width:650px) {
     .maps-main{
         margin: 5px 17px;
     }
