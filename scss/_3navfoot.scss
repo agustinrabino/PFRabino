@@ -1,0 +1,147 @@
+
+.nav{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    padding: 10px 50px;
+    justify-content: space-between;
+
+    .fa-bars{
+        display: none;
+        color: white;
+        font-size: 1.6rem;
+        transform: translateX(10px);
+    }
+
+    ul{
+        display: flex;
+        margin: 0;
+        padding: 0;
+
+        li{
+            list-style: none;
+        
+            a{
+                padding: 10px;
+                text-decoration: none;
+                color: white;
+                margin-right: 15px;
+                letter-spacing: .2rem;
+                font-size: 1.2rem;
+                &:hover{
+                    color: rgba(255, 255, 255, 0.407);
+                }
+            }
+
+            .active{
+                background-color: white;
+                color: black;
+            }
+        }
+    }
+
+    div{
+        padding-right: 10px;
+
+        input{
+            margin: 0;
+            width: 18vw;
+            min-width: 120px;
+        }
+
+        button{
+            background-color: black;
+            border: none;
+
+            .fa-magnifying-glass{
+                color: white;
+                background-color: black;
+                border: none;
+            }
+        }
+    }
+ 
+    
+}
+
+@media (max-width:920px) {
+    .nav{
+
+        .fa-bars{
+            display: flex;
+            &:hover + ul {
+                left:0px    
+            }
+        }
+
+        ul {
+            display: flex;
+            font-size: 2.2rem;
+            gap: 40px;
+            padding: 15px 0px 20px 10px;
+            width: auto;
+            height: auto;
+            background-color: black;
+            position: fixed;
+            top:0px;
+            left:-999px;
+            flex-direction: column;
+            align-content: start;
+            justify-content: start;
+            transition: 0.5s;
+            z-index: 3;
+            &:hover{
+                left:0px    
+            }
+        }
+ 
+        div {
+            input{
+                margin: 0;
+                width: 30vw;
+            }
+        }
+    }
+}
+
+@media (max-width:480px) {
+    .nav {
+        padding: 10px;
+    }
+
+    footer {
+        padding: 5px 10px;
+
+        .logo{
+            display: none;
+        }
+
+        .rights{
+            font-size: .75rem;
+        }
+    }
+}
+
+footer{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    margin: 0px;
+    padding: 5px 50px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+
+    ul{
+        display: flex;
+        padding: 0px;
+        margin: 0px;
+
+        li{
+            list-style: none;
+            margin-right: 10px;
+        }
+    }
+
+    img{
+        height: 40px;
+    }
+}

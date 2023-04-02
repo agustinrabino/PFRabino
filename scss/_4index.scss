@@ -1,0 +1,283 @@
+
+.hero{
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    grid-template-rows: 50vw;
+
+    .hero-info {
+        position: relative;
+
+        h1{
+            position: absolute;
+            top: 1%;
+            left: 50px;
+            font-size: clamp(4.5rem, 8vw, 10rem);
+            color: rgb(20, 20, 20);
+            letter-spacing: 20px;
+            font-weight: 600;
+            text-shadow: 1px 1px 2.5px black;
+            padding: 0px;
+
+            span{
+                color:rgb(246, 215, 176);
+                text-shadow: 1px 1px 2.5px rgb(248, 198, 137);
+            
+            }
+
+            .medque490{
+                display: none;
+            }
+        }
+
+        h4{
+            position: absolute;
+            top: 25%;
+            left: 50px;
+            font-size: clamp(1.5rem, 3vw, 4rem);
+            color: rgb(0, 0, 0);
+            font-weight: 300;
+        }
+
+        .bos{
+            position: absolute;
+            text-align: center;
+            left: 50px;
+            bottom: 27.5%;
+            border: 2px solid;
+            border-radius: 10px;
+            padding: 0.75%  1.5%;
+            font-size: clamp(1rem, 2vw, 4rem);
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            transition: 0.5s;
+            &:hover{
+                color: white;
+                background-color: rgb(49, 49, 49);
+                border: 2px solid black;
+            }
+        }
+
+        .bcs{
+            position: absolute;
+            text-align: center;
+            left: 50px;
+            bottom: 12.5%;
+            font-size: clamp(1rem, 2vw, 4rem);
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+
+            svg{
+                width: 25px;
+                transform: translate(-7px, 0px);
+                transition: .5s;
+            }
+
+            span{
+                &:hover{
+                    text-decoration: underline;
+                }
+                &:hover + svg{
+                    transform: translate(10px, 0px);
+                }
+            }
+        }
+    }
+
+    .hero-banner{
+        background-color: rgb(255, 255, 255); 
+        background-image: url(../multimedia/surfboard-cover.png); 
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top right;
+        background-attachment: fixed; 
+    }
+}
+
+@media (max-width:768px) {
+    .hero{
+        display: flex;
+        flex-direction: column;
+        height: 65vh;
+        position: relative;
+
+        .hero-info{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: inherit;
+            height: inherit;
+            z-index: 1;
+
+            h1{
+                position: unset;
+                text-align: center;
+                font-size: 3.15rem;
+            }
+
+            h4{
+                position: unset;
+                font-size: 2rem;
+            }
+
+            div{
+                a{
+                    padding: 0px 20px;
+                }
+
+                .bos{
+                    position: unset;
+                    font-size: 1.25rem;
+                }
+
+                .bcs{
+                    position: unset;
+                    font-size: 1.25rem;
+                }
+            }
+        }
+
+        .hero-banner{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100vw;
+            height: 65vh;
+            background-size: cover;
+            opacity: 0.8;
+        }
+    }
+}
+
+@media (max-width:480px) {
+    .hero-info{ 
+        h1{
+            position: unset;
+            text-align: center;
+            font-size: 3rem;
+        }
+
+        h4{
+            position: unset;
+            font-size: 1.85rem;
+
+            .medque490{
+                display: block;
+            }
+        }
+
+        div{
+            flex-direction: column;
+            gap: 25px;
+        }
+    }
+}
+
+.banner{
+    display: flex;
+    width: 100%;
+    gap: 25px;
+    margin: 25px 0px;  
+    
+    .items{
+        display: flex;
+        position: relative;
+        height: 62.5vh;
+        width: 50vw;
+        transition: 0.5s;
+        &:hover{
+            opacity: 0.75;
+        }
+
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;    
+        }
+
+        a{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            padding-top: 52.5vh;
+            font-size: clamp(2rem, 4vw, 5rem);
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            opacity: 0;
+            &:hover ~ h2{
+                letter-spacing: 20px;
+            };
+            &:hover{
+                opacity: 1;
+            }
+        }
+
+        h2{
+            font-size: clamp(2rem, 4vw, 5rem);
+            color: white;
+            width: 100%;
+            text-align: center;
+            transform:  translate(-50%, -50%);
+            position: absolute;
+            letter-spacing: 10px;
+            top: 15%;
+            left: 50%;
+            transition: 0.5s;
+        }
+    }
+}
+
+
+@media (max-width:768px) {
+    .banner{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+
+        .items{
+            width: inherit;
+
+            h2{
+                font-size: 3rem;
+            }
+
+            a{
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
+
+@media (max-width:480px) {
+    .banner{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+
+        .items{
+            width: inherit;
+
+            h2{
+                font-size: 3.5rem;
+                top: 20%;
+            }
+
+            a{
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
+
+.youtube{
+    width: 100vw;
+    height: 56.25vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom:25px;
+
+    iframe{
+        width: inherit;
+    }
+}
