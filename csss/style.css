@@ -297,14 +297,6 @@ footer {
   flex-direction: column;
   position: relative;
   margin-bottom: 2.5%; }
-  .shop-container img {
-    width: 100%;
-    height: clamp(400px, 70vh, 800px);
-    min-height: 400px;
-    object-fit: cover; }
-    .shop-container img:hover + .shop-products {
-      top: 0%;
-      z-index: 1; }
   .shop-container h2 {
     display: flex;
     position: absolute;
@@ -314,86 +306,107 @@ footer {
     font-weight: bold;
     font-size: 12vw;
     color: rgba(0, 0, 0, 0.65); }
-
-.shop-products {
-  position: absolute;
-  left: 0%;
-  top: 0%;
-  height: clamp(400px, 70vh, 800px);
-  display: flex;
-  overflow-x: scroll;
-  width: 100%;
-  gap: 15px;
-  padding: 2.5%;
-  z-index: -1;
-  opacity: 1;
-  background-color: rgba(255, 255, 255, 0.85); }
-  .shop-products:hover {
+  .shop-container img {
+    width: 100%;
+    height: clamp(400px, 70vh, 800px);
+    min-height: 400px;
+    object-fit: cover; }
+    .shop-container img:hover + .shop-products {
+      top: 0%;
+      z-index: 1; }
+  .shop-container .shop-products {
+    position: absolute;
+    left: 0%;
     top: 0%;
-    z-index: 1; }
-  .shop-products .rel-prod {
+    height: clamp(400px, 70vh, 800px);
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 15px;
-    min-width: 300px;
-    max-width: 400px;
-    padding: 10px 0px;
-    background-color: #f1f1f1;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); }
-    .shop-products .rel-prod h4 {
-      text-align: center;
-      width: 100%;
-      color: black;
-      font-weight: bold;
-      text-decoration: underline;
-      text-underline-offset: 5px;
-      font-size: 1.4rem; }
-    .shop-products .rel-prod p {
-      font-weight: 300;
-      font-style: italic;
-      font-size: 1.3rem; }
-    .shop-products .rel-prod a {
-      border-radius: 10px;
-      padding: 15px 30px;
-      text-decoration: none;
-      color: black;
-      font-size: 1.4rem;
-      margin-bottom: 65%; }
-      .shop-products .rel-prod a:hover {
-        cursor: pointer;
-        text-decoration: underline; }
-    .shop-products .rel-prod img {
-      border-radius: 15px;
-      min-height: 200px;
-      max-height: 77%;
-      flex-grow: 1;
-      object-fit: contain; }
-    .shop-products .rel-prod .prod-price {
+    overflow-x: scroll;
+    width: 100%;
+    gap: 15px;
+    padding: 2.5%;
+    z-index: -1;
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.85); }
+    .shop-container .shop-products:hover {
+      top: 0%;
+      z-index: 1; }
+    .shop-container .shop-products .rel-prod {
       display: flex;
-      width: 100%;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
-      gap: 15px; }
-      .shop-products .rel-prod .prod-price select {
-        width: 70px;
-        font-weight: 300;
-        font-size: 1.5rem; }
-      .shop-products .rel-prod .prod-price button {
-        padding: 2.5px 7.5px;
-        border: none;
-        background-color: rgba(0, 0, 0, 0.45);
+      justify-content: space-between;
+      position: relative;
+      border-radius: 15px;
+      min-width: 300px;
+      max-width: 400px;
+      padding: 10px 0px;
+      background-color: #f1f1f1;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); }
+      .shop-container .shop-products .rel-prod div h4 {
         text-align: center;
-        color: white;
-        border-radius: 5px;
-        font-size: 1rem; }
-        .shop-products .rel-prod .prod-price button:hover {
+        width: 100%;
+        color: black;
+        font-weight: bold;
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        font-size: 1.4rem; }
+      .shop-container .shop-products .rel-prod div p {
+        font-weight: 300;
+        font-style: italic;
+        font-size: 1.3rem; }
+      .shop-container .shop-products .rel-prod a {
+        border-radius: 10px;
+        padding: 15px 30px;
+        text-decoration: none;
+        color: black;
+        font-size: 1.4rem;
+        margin-bottom: 65%; }
+        .shop-container .shop-products .rel-prod a:hover {
           cursor: pointer;
-          background-color: rgba(0, 0, 0, 0.75); }
-    .shop-products .rel-prod div p span {
-      text-decoration: line-through;
-      color: red; }
+          text-decoration: underline; }
+      .shop-container .shop-products .rel-prod .linkinfo {
+        position: absolute;
+        top: 50%;
+        padding: 20px; }
+        .shop-container .shop-products .rel-prod .linkinfo:focus + .prodinfo {
+          display: flex;
+          z-index: 2; }
+      .shop-container .shop-products .rel-prod .prodinfo {
+        position: absolute;
+        display: none;
+        top: 50%;
+        width: 100%;
+        padding: 25px; }
+      .shop-container .shop-products .rel-prod img {
+        border-radius: 15px;
+        min-height: 200px;
+        max-height: 77%;
+        flex-grow: 1;
+        object-fit: contain; }
+      .shop-container .shop-products .rel-prod .prod-price {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 15px; }
+        .shop-container .shop-products .rel-prod .prod-price select {
+          width: 70px;
+          font-weight: 300;
+          font-size: 1.5rem; }
+        .shop-container .shop-products .rel-prod .prod-price button {
+          padding: 2.5px 7.5px;
+          border: none;
+          background-color: rgba(0, 0, 0, 0.45);
+          text-align: center;
+          color: white;
+          border-radius: 5px;
+          font-size: 1rem; }
+          .shop-container .shop-products .rel-prod .prod-price button:hover {
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.75); }
+      .shop-container .shop-products .rel-prod div p span {
+        text-decoration: line-through;
+        color: red; }
 
 .carousel {
   margin: 25px 0px; }

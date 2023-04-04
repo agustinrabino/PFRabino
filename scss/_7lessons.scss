@@ -6,10 +6,10 @@
     align-items: center;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.303);
-    background-color: rgba(246, 215, 176, 0.5);
+    background-color: $pcolor;
 
     div{
-        height: 45vh;
+        height: 55vh;
     }
 
     .lessons-info{
@@ -24,16 +24,18 @@
         h2{
             flex-grow: 1;
             padding: 5px 0px;
-            font-size: clamp(1rem, 2vw, 1.75rem);
+            font-size: $title-mobile;
         }
 
         h4{
             flex-grow: 1;
+            font-size: $subtitle-mobile;
         }
 
         p{
             flex-grow: 3;
             margin-top: 15px;
+            font-size: $paragraph-desktop;
         }
     }
 
@@ -60,7 +62,7 @@
     padding: 10px 50px;
     gap: 10px;
     margin-bottom: 20px;
-    background-color: rgba(75, 157, 171, 0.5);
+    background-color: $scolor;
 
     fieldset{
         border: none;
@@ -153,7 +155,7 @@
     flex-direction: column;
     height: 300px;
     border-radius: 10px;
-    background-color: rgba(246, 215, 176, 0.25);
+    background-color:$pcolor;
     overflow-y: scroll;
     margin: 30px 60px;
     align-items: center;
@@ -163,6 +165,7 @@
         display: block;
         padding: 20px 25px 5px 25px;
         margin: 0px;
+        font-size: $subtitle-desktop;
     }
 
     .review-lessons{

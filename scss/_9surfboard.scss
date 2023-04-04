@@ -1,6 +1,6 @@
 .custom-surf-grid{
     display: grid;
-    grid-template-columns: 1fr 30vw;
+    grid-template-columns: 1fr 30%;
     grid-template-rows: 1fr 2.5fr;
     grid-template-areas:
     "A B"
@@ -20,7 +20,7 @@
         grid-area: B;
         padding-right: 60px;
         height: inherit;
-        background-color: rgba(75, 157, 171, 0.35);
+        background-color:$scolor;
         position: relative;
 
         .surfboard-button{
