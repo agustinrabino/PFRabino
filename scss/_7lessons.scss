@@ -70,12 +70,12 @@
     
         legend{
             font-style: italic;
-            font-size: 1.2rem;
+            font-size: $subtitle-mobile;
             margin-bottom: 6px;
         }
 
         label{
-            font-size: 1.1rem;
+            font-size: $paragraph-mobile;
         }
 
         input{
@@ -85,7 +85,7 @@
             width: 70%;
             border: none;
             border-radius: 5px;
-            font-size: 1rem;
+            font-size: $paragraph-mobile;
         }
     }
 
@@ -127,7 +127,7 @@
             border: none;
             margin-top: 10px;
             padding: 15px;
-            font-size: 1rem;
+            font-size: $paragraph-mobile;
         }
     }
     
@@ -179,7 +179,7 @@
             min-width: 150px;
             flex-grow: 1;
             text-align: end;
-            font-size: 1.2rem;
+            font-size: $subtitle-mobile;
         }
 
         .review-info{
@@ -189,6 +189,7 @@
             border-radius: 10px;
             padding: 10px;
             margin-top: 2.5px;
+            font-size: $paragraph-mobile;
         }
     }   
 }

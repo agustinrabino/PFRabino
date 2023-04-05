@@ -40,6 +40,10 @@ h2{
             object-fit: contain;
             border-radius: 10px;
         }
+
+        p{
+            font-size: $paragraph-desktop;
+        }
     }
 }
 
@@ -65,6 +69,7 @@ h2{
 
             p{
                 width: 30vw;
+                font-size: $paragraph-mobile;
             }      
         }
     } 
