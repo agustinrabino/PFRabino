@@ -10,3 +10,13 @@ $subtitle-mobile:clamp(1rem, 2.5vw, 1.8rem);
 
 $paragraph-desktop:clamp(1.2rem, 1.75vw, 1.8rem);
 $paragraph-mobile:clamp(.8rem, 1.75vw, 1.2rem);
+
+.buttonlink{
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5) ;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.25);
+    font-size: 2rem;
+    font-weight: 500;
+    font-style: italic;
+}               
