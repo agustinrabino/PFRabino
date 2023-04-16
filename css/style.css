@@ -147,7 +147,7 @@ footer {
       .hero .hero-info h1 .medque {
         display: none; }
     .hero .hero-info h4 {
-      font-size: clamp(1.8rem, 2.5vw, 3.2rem);
+      font-size: clamp(1.6rem, 2.5vw, 3.2rem);
       line-height: 3rem;
       font-weight: 500; }
     .hero .hero-info div {
@@ -157,7 +157,7 @@ footer {
         border: 2px solid;
         border-radius: 10px;
         padding: 0.75%  1.5%;
-        font-size: clamp(1.8rem, 2.5vw, 3.2rem);
+        font-size: clamp(1.6rem, 2.5vw, 3.2rem);
         text-decoration: none;
         color: black;
         transition: 0.5s; }
@@ -167,7 +167,7 @@ footer {
           border: 2px solid black; }
       .hero .hero-info div .bcs {
         text-align: start;
-        font-size: clamp(1.8rem, 2.5vw, 3.2rem);
+        font-size: clamp(1.6rem, 2.5vw, 3.2rem);
         text-decoration: none;
         color: black; }
         .hero .hero-info div .bcs svg {
@@ -208,7 +208,7 @@ footer {
       height: 100%;
       text-align: center;
       padding-top: 40vh;
-      font-size: clamp(1.8rem, 2.5vw, 3.2rem);
+      font-size: clamp(1.6rem, 2.5vw, 3.2rem);
       text-decoration: none;
       color: white;
       opacity: 0; }
@@ -217,7 +217,7 @@ footer {
       .banner .items a:hover {
         opacity: 1; }
     .banner .items h2 {
-      font-size: clamp(1.8rem, 2.5vw, 3.2rem);
+      font-size: clamp(1.6rem, 2.5vw, 3.2rem);
       color: white;
       width: 100%;
       text-align: center;
@@ -259,10 +259,10 @@ footer {
       .hero .hero-info div a {
         padding: 0px 20px; }
       .hero .hero-info div .bos {
-        font-size: clamp(1rem, 2.5vw, 1.8rem);
+        font-size: clamp(1.4rem, 2.5vw, 2.2rem);
         align-self: center; }
       .hero .hero-info div .bcs {
-        font-size: clamp(1rem, 2.5vw, 1.8rem); }
+        font-size: clamp(1.4rem, 2.5vw, 2.2rem); }
     .hero .hero-banner {
       position: absolute;
       top: 0;
@@ -290,7 +290,7 @@ footer {
     .hero-info h1 span {
       display: block; }
   .hero-info h4 {
-    font-size: clamp(1rem, 2.5vw, 1.8rem); }
+    font-size: clamp(1.4rem, 2.5vw, 2.2rem); }
     .hero-info h4 .span {
       display: block; }
 
@@ -469,7 +469,7 @@ footer {
     z-index: -1; }
     .container-riders .riders-info .riders-cover p {
       text-align: start;
-      font-size: clamp(1rem, 2.5vw, 1.8rem);
+      font-size: clamp(1.4rem, 2.5vw, 2.2rem);
       padding: 20px;
       width: 30vw;
       margin: 0px;
@@ -519,7 +519,7 @@ footer {
   .container-riders .riders-info .riders-cover .riders-surf {
     display: none; }
   .container-riders .riders-info .riders-cover p {
-    font-size: clamp(1.8rem, 2.5vw, 3.2rem);
+    font-size: clamp(1.6rem, 2.5vw, 3.2rem);
     width: 100vw; } }
 .about-lessons {
   display: flex;
@@ -542,10 +542,10 @@ footer {
     .about-lessons .lessons-info h2 {
       flex-grow: 1;
       padding: 5px 0px;
-      font-size: clamp(1.8rem, 8vw, 2.4rem); }
+      font-size: clamp(1.6rem, 2.5vw, 3.2rem); }
     .about-lessons .lessons-info h4 {
       flex-grow: 1;
-      font-size: clamp(1rem, 2.5vw, 1.8rem); }
+      font-size: clamp(1.4rem, 2.5vw, 2.2rem); }
     .about-lessons .lessons-info p {
       flex-grow: 3;
       margin-top: 15px;
@@ -572,10 +572,10 @@ footer {
     padding: 10px 0px; }
     .lessons-contact fieldset legend {
       font-style: italic;
-      font-size: clamp(1rem, 2.5vw, 1.8rem);
+      font-size: clamp(1.4rem, 2.5vw, 2.2rem);
       margin-bottom: 6px; }
     .lessons-contact fieldset label {
-      font-size: clamp(0.8rem, 1.75vw, 1.2rem); }
+      font-size: clamp(1.2rem, 1.75vw, 1.8rem); }
     .lessons-contact fieldset input {
       padding: 5px;
       margin-bottom: 12px;
@@ -583,7 +583,7 @@ footer {
       width: 70%;
       border: none;
       border-radius: 5px;
-      font-size: clamp(0.8rem, 1.75vw, 1.2rem); }
+      font-size: clamp(1.1rem, 1.75vw, 1.4rem); }
   .lessons-contact .contact-information-class {
     grid-area: InfoC;
     display: flex;
@@ -613,7 +613,7 @@ footer {
       border: none;
       margin-top: 10px;
       padding: 15px;
-      font-size: clamp(0.8rem, 1.75vw, 1.2rem); }
+      font-size: clamp(1.1rem, 1.75vw, 1.4rem); }
   .lessons-contact .submit-reset {
     grid-area: SubRes;
     display: flex;
@@ -643,7 +643,7 @@ footer {
     display: block;
     padding: 20px 25px 5px 25px;
     margin: 0px;
-    font-size: clamp(1.8rem, 2.5vw, 3.2rem); }
+    font-size: clamp(1.6rem, 2.5vw, 3.2rem); }
   .review-container .review-lessons {
     display: flex;
     padding: 15px;
@@ -654,7 +654,9 @@ footer {
       min-width: 150px;
       flex-grow: 1;
       text-align: end;
-      font-size: clamp(1rem, 2.5vw, 1.8rem); }
+      font-size: clamp(1.4rem, 2.5vw, 2.2rem); }
+      .review-container .review-lessons .review-title h4 {
+        font-size: clamp(1.6rem, 2.5vw, 3.2rem); }
     .review-container .review-lessons .review-info {
       flex-grow: 3;
       border: 2px solid black;
@@ -662,7 +664,7 @@ footer {
       border-radius: 10px;
       padding: 10px;
       margin-top: 2.5px;
-      font-size: clamp(0.8rem, 1.75vw, 1.2rem); }
+      font-size: clamp(1.2rem, 1.75vw, 1.8rem); }
 
 @media (max-width: 768px) {
   .about-lessons {
@@ -686,6 +688,8 @@ footer {
     flex-direction: column;
     height: auto;
     padding: 30px; }
+    .lessons-contact fieldset label {
+      font-size: clamp(1.1rem, 1.75vw, 1.4rem); }
     .lessons-contact .form-floating input {
       width: 95%; }
 
@@ -700,12 +704,16 @@ footer {
         flex-direction: column; }
         .review-container .review-mq .review-lessons .review-title {
           display: flex;
-          justify-content: space-between; } }
+          justify-content: space-between; }
+        .review-container .review-mq .review-lessons .review-info {
+          font-size: clamp(1.1rem, 1.75vw, 1.4rem); } }
 h1 {
-  padding: 5px 60px; }
+  padding: 5px 60px;
+  font-size: clamp(3.2rem, 8vw, 5.7rem); }
 
 h2 {
-  padding: 5px 60px; }
+  padding: 5px 60px;
+  font-size: clamp(1.6rem, 2.5vw, 3.2rem); }
 
 .hours {
   font-style: italic;
@@ -725,7 +733,8 @@ h2 {
     gap: 10px;
     padding: 20px 0px; }
     .maps-main .maps h3 {
-      margin: 5px 0px; }
+      margin: 5px 0px;
+      font-size: clamp(1.6rem, 2.5vw, 3.2rem); }
       .maps-main .maps h3 br {
         display: none; }
     .maps-main .maps iframe {
@@ -752,7 +761,7 @@ h2 {
         width: 30vw; }
       .maps-main .maps p {
         width: 30vw;
-        font-size: clamp(0.8rem, 1.75vw, 1.2rem); } }
+        font-size: clamp(1.1rem, 1.75vw, 1.4rem); } }
 @media (max-width: 650px) {
   .maps-main {
     margin: 5px 17px; }
@@ -801,14 +810,14 @@ h2 {
   .container-main .info-container h2 {
     font-size: clamp(1.8rem, 8vw, 2.4rem); }
   .container-main .info-container p {
-    font-size: clamp(1rem, 2.5vw, 1.8rem);
+    font-size: clamp(1.4rem, 2.5vw, 2.2rem);
     padding: 10px 60px; }
   .container-main .surfboard-container {
     padding: 10px clamp(50px, 10%, 150px);
     height: 40%;
     margin-bottom: 120px; }
     .container-main .surfboard-container .surfboard-param h4 {
-      font-size: clamp(1.8rem, 2.5vw, 3.2rem);
+      font-size: clamp(1.6rem, 2.5vw, 3.2rem);
       font-style: italic;
       text-decoration: underline; }
     .container-main .surfboard-container .surfboard-param .param {
@@ -817,7 +826,7 @@ h2 {
       padding-bottom: 15px;
       border-bottom: 2px solid rgba(0, 0, 0, 0.2); }
       .container-main .surfboard-container .surfboard-param .param label {
-        font-size: clamp(1rem, 2.5vw, 1.8rem);
+        font-size: clamp(1.4rem, 2.5vw, 2.2rem);
         margin: 0px; }
       .container-main .surfboard-container .surfboard-param .param div label {
         font-size: 1.4rem;
@@ -826,7 +835,7 @@ h2 {
         width: 70%; }
     .container-main .surfboard-container .surfboard-param .surfboard-button {
       text-align: center;
-      font-size: clamp(1.8rem, 2.5vw, 3.2rem);
+      font-size: clamp(1.6rem, 2.5vw, 3.2rem);
       text-decoration: none;
       color: black;
       border: none;
@@ -861,7 +870,7 @@ h2 {
     transform: translate3d(0, 5px, 0); } }
 @media (max-width: 576px) {
   .container-main .info-container h2 {
-    font-size: clamp(1.8rem, 2.5vw, 3.2rem); }
+    font-size: clamp(1.6rem, 2.5vw, 3.2rem); }
   .container-main .info-container p {
     font-size: clamp(1.2rem, 1.75vw, 1.8rem);
     padding: 10px 20px; }
@@ -871,7 +880,7 @@ h2 {
     height: 40%;
     margin-bottom: 120px; }
     .surfboard-container .surfboard-param h4 {
-      font-size: clamp(1rem, 2.5vw, 1.8rem);
+      font-size: clamp(1.4rem, 2.5vw, 2.2rem);
       font-style: italic;
       text-decoration: underline; }
     .surfboard-container .surfboard-param .param {
@@ -889,7 +898,7 @@ h2 {
     .surfboard-container .surfboard-param .surfboard-button {
       position: relative;
       text-align: center;
-      font-size: clamp(1.8rem, 2.5vw, 3.2rem);
+      font-size: clamp(1.6rem, 2.5vw, 3.2rem);
       text-decoration: none;
       color: black;
       border: none;

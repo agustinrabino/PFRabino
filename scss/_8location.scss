@@ -1,9 +1,13 @@
 h1{
     padding: 5px 60px;
+    font-size: clamp(3.2rem, 8vw, 5.7rem);;
+
 }
 
 h2{
     padding: 5px 60px;
+    font-size: $subtitle-desktop;
+
 }
 
 .hours{
@@ -29,6 +33,7 @@ h2{
 
         h3{
             margin: 5px 0px;
+            font-size: $subtitle-desktop;
             br{
                 display: none;
             }
