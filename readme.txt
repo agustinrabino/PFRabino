@@ -1,0 +1,1 @@
+Hello! my name is Agustin Rabino and this project is the final assignment from the Web Development course I took in CoderHouse. The course is the first of the front-end track they have, and is mainly focused on principles of HTML and CSS. The was passed April 12th 2023 after 38h of online classes.
